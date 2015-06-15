@@ -1,0 +1,16 @@
+body {
+  padding-top: 70px;
+}
+
+nav .active {
+  font-weight: bold;
+}
+
+.muted {
+  opacity: .5;
+}
+
+pre {
+  background-color: transparent;
+  border: none;
+}
