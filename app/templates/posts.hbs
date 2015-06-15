@@ -1,5 +1,9 @@
 <h1>Posts</h1>
 
 {{#each model as |post|}}
-  {{post.tweet}}
+  <li {{action 'showPost' post}}>{{#link-to 'post' post}}{{post.tweet}}<span class='muted'> By: {{post.user.name}}</span>{{/link-to}}</li>
 {{/each}}
+
+
+
+{{outlet}}

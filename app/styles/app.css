@@ -1,5 +1,26 @@
+@font-face {
+    font-family: 'star_jediregular';
+    src: url('/fonts/starjedi-webfont.eot');
+    src: url('/fonts/starjedi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/starjedi-webfont.woff2') format('woff2'),
+         url('/fonts/starjedi-webfont.woff') format('woff'),
+         url('/fonts/starjedi-webfont.ttf') format('truetype'),
+         url('/fonts/starjedi-webfont.svg#star_jediregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#death-star {
+  position: fixed;
+  top: 70px;
+  right: 100px;
+}
+
 body {
   padding-top: 70px;
+  font-family: "star_jediregular", Arial, sans-serif;
+  background: black;
+  color: yellow;
 }
 
 nav .active {
@@ -13,4 +34,23 @@ nav .active {
 pre {
   background-color: transparent;
   border: none;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.panel-default {
+  background: black;
+}
+
+.panel-default>.panel-heading {
+  background: yellow;
+  color: black;
+}
+
+.navbar, .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  background: yellow;
+  color: black;
 }
